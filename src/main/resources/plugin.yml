@@ -1,0 +1,60 @@
+name: HybridPedestal
+main: me.hybric.hybridpedestal.HybridPedestal
+version: 1.0.0
+api-version: 1.21
+author: Hybrid
+description: >
+  HybridPedestal là plugin Paper cho Minecraft 1.21.1 - 1.21.4, mô phỏng cơ chế chế tạo
+  vũ khí kiểu Hoplite với pedestal hologram, công thức tùy chỉnh, GUI cho admin, 
+  hỗ trợ DecentHolograms, PlaceholderAPI và ProtocolLib.
+
+# Khi nào plugin được load
+load: POSTWORLD
+
+# Dependencies
+depend:
+  - DecentHolograms
+softdepend:
+  - PlaceholderAPI
+  - ProtocolLib
+
+# Commands
+commands:
+  pedestaladmin:
+    description: Admin command to manage pedestals and recipes
+    usage: /<command> [args]
+    aliases: [pa, hpadmin]
+    permission: hybridpedestal.admin
+  pedestal:
+    description: Base command for players to interact with pedestals
+    usage: /<command> [args]
+    aliases: [hp, hped]
+    permission: hybridpedestal.use
+
+# Permissions
+permissions:
+  hybridpedestal.admin:
+    description: Allows access to all admin features of HybridPedestal
+    default: op
+    children:
+      hybridpedestal.reload: true
+      hybridpedestal.create: true
+      hybridpedestal.delete: true
+  hybridpedestal.use:
+    description: Allows players to interact with pedestals
+    default: true
+  hybridpedestal.reload:
+    description: Reloads the plugin configuration
+    default: op
+  hybridpedestal.create:
+    description: Create a new pedestal hologram
+    default: op
+  hybridpedestal.delete:
+    description: Delete an existing pedestal hologram
+    default: op
+
+# Libraries (nếu bạn muốn shading một số dependency)
+libraries: []
+
+# Các thông tin bổ sung
+folia-supported: true

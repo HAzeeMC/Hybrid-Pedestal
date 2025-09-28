@@ -24,7 +24,7 @@
             <url>https://repo.papermc.io/repository/maven-public/</url>
         </repository>
 
-        <!-- JitPack (chỉ cho DecentHolograms) -->
+        <!-- JitPack (cho DecentHolograms) -->
         <repository>
             <id>jitpack.io</id>
             <url>https://jitpack.io</url>
@@ -39,7 +39,7 @@
         <!-- ProtocolLib -->
         <repository>
             <id>dmulloy2-repo</id>
-            <url>https://repo.dmulloy2.net/nexus/repository/maven-public/</url>
+            <url>https://repo.dmulloy2.net/repository/maven-public/</url>
         </repository>
     </repositories>
 
@@ -52,9 +52,9 @@
             <scope>provided</scope>
         </dependency>
 
-        <!-- DecentHolograms từ JitPack -->
+        <!-- DecentHolograms (JitPack) -->
         <dependency>
-            <groupId>com.github.decentsoftware-eu</groupId>
+            <groupId>com.github.decentsoftware-eu.DecentHolograms</groupId>
             <artifactId>DecentHolograms</artifactId>
             <version>2.8.5</version>
             <scope>provided</scope>
@@ -68,7 +68,7 @@
             <scope>provided</scope>
         </dependency>
 
-        <!-- ProtocolLib từ dmulloy2 -->
+        <!-- ProtocolLib -->
         <dependency>
             <groupId>com.comphenix.protocol</groupId>
             <artifactId>ProtocolLib</artifactId>

@@ -1,0 +1,34 @@
+# ===============================
+#   HybridPedestal Configuration
+# ===============================
+
+# General Settings
+settings:
+  language: en
+  debug: false
+  default-rtp-command: "rtp"
+
+# Crafting Effects
+effects:
+  enabled: true
+  success-effects:
+    - "sound:ENTITY_PLAYER_LEVELUP"
+    - "particle:VILLAGER_HAPPY"
+    - "message:&aBạn đã chế tạo thành công!"
+  fail-effects:
+    - "sound:ENTITY_VILLAGER_NO"
+    - "particle:SMOKE_NORMAL"
+    - "message:&cBạn không đủ nguyên liệu, đã bị dịch chuyển!"
+
+# Pedestal Defaults
+pedestal:
+  hologram-title: "&6&lBệ Chế Tạo"
+  hologram-lines:
+    - "&7Đặt nguyên liệu vào để chế tạo"
+    - "&eClick để bắt đầu!"
+  default-block: "STONE"
+
+# Database (sau này có thể mở rộng, mặc định file storage)
+storage:
+  type: "yaml"
+  file: "pedestals.yml"

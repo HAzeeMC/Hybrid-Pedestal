@@ -1,0 +1,16 @@
+# ===============================
+#   HybridPedestal Messages
+# ===============================
+
+prefix: "&8[&6HybridPedestal&8] "
+
+messages:
+  no-permission: "&cBạn không có quyền để dùng lệnh này!"
+  reloaded: "&aCấu hình đã được tải lại thành công."
+  player-only: "&cChỉ người chơi mới có thể dùng lệnh này."
+  pedestal-created: "&aBạn đã tạo thành công một bệ mới!"
+  pedestal-deleted: "&cBệ đã được xóa."
+  not-enough-items: "&cBạn không đủ nguyên liệu để chế tạo!"
+  crafting-success: "&aChúc mừng! Bạn đã chế tạo thành công."
+  crafting-failed: "&cChế tạo thất bại."
+  invalid-command: "&eLệnh không hợp lệ, dùng: &f/{command} help"
